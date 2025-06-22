@@ -46,7 +46,7 @@ ui_state:
   hide_generation_warning: false
   theme: light
 ui:
-  title: Chatterbox TTS Server
+  title: VoiceAI TTS Server
   show_language_select: true
   max_predefined_voices_in_dropdown: 50
 debug:

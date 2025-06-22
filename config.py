@@ -96,7 +96,7 @@ DEFAULT_CONFIG: Dict[str, Any] = {
         "theme": "dark",  # Default UI theme ('dark' or 'light').
     },
     "ui": {  # General UI display settings.
-        "title": "Chatterbox TTS Server",  # Title displayed in the web UI.
+        "title": "VoiceAI TTS Server",  # Title displayed in the web UI.
         "show_language_select": True,  # Whether to show language selection in the UI.
         "max_predefined_voices_in_dropdown": 20,  # Max predefined voices to list in UI dropdown.
     },
