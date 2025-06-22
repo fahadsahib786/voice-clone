@@ -1,5 +1,5 @@
 // ui/script.js
-// Client-side JavaScript for the Voice TTS Server web interface.
+// Client-side JavaScript for the V TTS Server web interface.
 // Handles UI interactions, API communication, audio playback, and settings management.
 
 document.addEventListener('DOMContentLoaded', async function () {
@@ -761,20 +761,6 @@ document.addEventListener('DOMContentLoaded', async function () {
     if (loadingCancelBtn) loadingCancelBtn.addEventListener('click', () => {
         if (isGenerating) { isGenerating = false; hideLoadingOverlay(); showNotification("Generation UI cancelled by user.", "info"); }
     });
-    function showTextLoader() {
-        const textLoader = document.getElementById('text-loader');
-        if (textLoader) {
-            textLoader.classList.remove('hidden');
-        }
-    }
-
-    function hideTextLoader() {
-        const textLoader = document.getElementById('text-loader');
-        if (textLoader) {
-            textLoader.classList.add('hidden');
-        }
-    }
-
     function showLoadingOverlay() {
         if (loadingOverlay && generateBtn && loadingCancelBtn) {
             loadingMessage.textContent = 'Generating audio...';
@@ -782,7 +768,6 @@ document.addEventListener('DOMContentLoaded', async function () {
             loadingOverlay.style.display = 'flex';
             loadingOverlay.classList.remove('hidden', 'opacity-0'); loadingOverlay.dataset.state = 'open';
             generateBtn.disabled = true; loadingCancelBtn.disabled = false;
-            showTextLoader();
         }
     }
     function hideLoadingOverlay() {
@@ -793,7 +778,6 @@ document.addEventListener('DOMContentLoaded', async function () {
                 loadingOverlay.dataset.state = 'closed';
             }, 300);
             generateBtn.disabled = false;
-            hideTextLoader();
         }
     }
 

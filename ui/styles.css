@@ -798,27 +798,6 @@ video {
     transition-duration: 300ms;
 }
 
-/* Text loader styles */
-.text-loader {
-    position: absolute;
-    top: 50%;
-    right: 1rem;
-    transform: translateY(-50%);
-    width: 1.5rem;
-    height: 1.5rem;
-    color: #4f46e5; /* text-indigo-600 */
-    transition: opacity 200ms ease-in-out;
-}
-
-.dark .text-loader {
-    color: #818cf8; /* dark:text-indigo-400 */
-}
-
-.text-loader-spinner {
-    width: 100%;
-    height: 100%;
-}
-
 .loading-box-base {
     background-color: #ffffff;
     padding: 2rem;
